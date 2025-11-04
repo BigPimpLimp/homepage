@@ -1,3 +1,3 @@
-import './style.css';
+import "./style.css";
 
-console.log('Connected');
+console.log("Connected");
