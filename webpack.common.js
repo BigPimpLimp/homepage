@@ -6,7 +6,11 @@ module.exports = {
     app: "./src/index.js",
   },
   devServer: {
+    static: {
+      directory: path.join(__dirname, "public"), // serve static files
+    },
     watchFiles: ["./src/template.html"],
+    port: 8080, // optional, just for clarity
   },
   plugins: [
     new HtmlWebpackPlugin({
